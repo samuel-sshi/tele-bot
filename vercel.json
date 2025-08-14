@@ -1,7 +1,6 @@
 {
   "functions": {
-    "api/telegram.py": { "runtime": "python3.12" },
-    "api/poll.py":     { "runtime": "python3.12" }
+    "api/**/*.py": { "runtime": "python3.11" }
   },
   "crons": [
     { "path": "/api/poll", "schedule": "0 0 * * *" }
