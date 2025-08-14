@@ -4,6 +4,6 @@
     "api/poll.py":     { "runtime": "python3.12" }
   },
   "crons": [
-    { "path": "/api/poll", "schedule": "0 0 1 * *" }
+    { "path": "/api/poll", "schedule": "0 0 * * *" }
   ]
 }
