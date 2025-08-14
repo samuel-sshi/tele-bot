@@ -11,7 +11,7 @@ BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TG = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 app = FastAPI()
-redis = Redis(url=os.environ["KV_REST_API_URL"], token=os.environ["KV_REST_API_TOKEN"])
+redis = Redis(url=os.environ["kv_KV_REST_API_URL"], token=os.environ["kv_KV_REST_API_TOKEN"])
 
 def b(x): return f"<b>{H(x)}</b>"
 def code(x): return f"<code>{H(x)}</code>"
