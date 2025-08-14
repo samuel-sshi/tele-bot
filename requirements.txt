@@ -1,2 +1,5 @@
+
+python3=3.12
+pip=25.2
 python-telegram-bot>=21,<22
 aiohttp>=3.9,<4
