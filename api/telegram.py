@@ -8,7 +8,7 @@ import httpx
 app = FastAPI()
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TG = f"https://api.telegram.org/bot{BOT_TOKEN}"
-redis = Redis(url=os.environ["KV_REST_API_URL"], token=os.environ["KV_REST_API_TOKEN"])
+redis = Redis(url=os.environ["kv_KV_REST_API_URL"], token=os.environ["kv_KV_REST_API_TOKEN"])
 
 # ---- persistence helpers (Redis) ----
 def get_subscribers() -> Set[int]:
