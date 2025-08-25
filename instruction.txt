@@ -1,0 +1,15 @@
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install -U pip
+py -m pip install "python-telegram-bot==20.7" requests python-dotenv   # or discord.py aiohttp python-dotenv
+pip install python-telegram-bot aiohttp python-dotenv
+
+.\.venv\Scripts\Activate.ps1
+
+# Clean any conflicting packages
+py -m pip uninstall -y python-telegram-bot telegram
+
+# Install a 3.13-friendly PTB (latest)
+py -m pip install -U "python-telegram-bot>=22.3" requests python-dotenv
+
+$env:TELEGRAM_BOT_TOKEN=""
